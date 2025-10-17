@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>I'm Sorry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="bg-video-wrap" aria-hidden="true">
+    <video id="bgVideo" class="bg-video" muted playsinline loop></video>
+    <div class="bg-overlay"></div>
+  </div>
+  <canvas id="heartsCanvas" class="hearts-canvas" aria-hidden="true"></canvas>
+
+  <main class="container">
+    <header class="hero">
+      <h1>I'm sorry, MISS Mili.</h1>
+      <p class="subtitle" id="subtitleText">You are kind, strong, and beautiful. I’m grateful for you, and I’m trying—every day—to be better for us.</p>
+    </header>
+
+    <section class="counter" aria-live="polite">
+      <div class="counter-card">
+        <div class="day">Day <span id="dayNumber">1</span></div>
+        <div class="message">saying sorry</div>
+        <div class="date" id="sinceText"></div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Photos of us">
+      <div class="carousel">
+        <button class="nav prev" id="prevBtn" aria-label="Previous photo">&#10094;</button>
+        <div class="slides" id="slides"></div>
+        <button class="nav next" id="nextBtn" aria-label="Next photo">&#10095;</button>
+      </div>
+    <div class="caption" id="slideCaption" aria-live="polite"></div>
+      <div class="dots" id="dots" aria-hidden="true"></div>
+    </section>
+
+    <section class="note">
+      <p>Every day, I will keep showing up with honesty, patience, and love. I'm sorry for my mistakes, and I'm learning from them. Thank you for being you.</p>
+    </section>
+
+    <footer class="footer">
+      <small>Made with love, and a promise to do better.</small>
+    </footer>
+  </main>
+
+  <script id="inline-media" type="application/json">[
+    "WhatsApp Image 2025-10-17 at 20.51.57.jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.31 (1).jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.31 (2).jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.32 (1).jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.32.jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.33 (1).jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.33 (2).jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.33 (3).jpeg",
+    "WhatsApp Image 2025-10-17 at 21.00.33.jpeg",
+    "WhatsApp Video 2025-10-17 at 21.00.33 (1).mp4",
+    "WhatsApp Video 2025-10-17 at 21.00.33.mp4"
+  ]</script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
